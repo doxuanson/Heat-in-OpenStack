@@ -48,7 +48,9 @@ Các thành phần của HOT được chia thành các section như sau:
 ####2.description
 - Đây là section tùy chọn cho phép mô tả về template HOT .
 - Syntax :
-***
+
+
+
 	description: Simple template to deploy a single compute instance 
 	  - Nếu bạn muốn cung cấp một đoạn mô tả dài hơn trên nhiêu dòng , bạn có thể làm như sau :
 	description: >
@@ -130,22 +132,26 @@ Defines whether the parameter is updatable. Stack update fails, if this is set t
 	The description and the label are optional, but defining these attributes is good practice to provide useful information about the role of the parameter to the user.
 
 ####5.resource section
-- Xác định nguồn lực thực tế làm nên 1 stack được deploy từ template hay chính là sản phẩm của template đó.
-- Mỗi `resourc`e được định nghĩa trong 1 khối riêng biệt ở trong `resource section` .
-
-
-	resources:
-	  <resource ID>:
-	    type: <resource type>
-	    properties:
-	      <property name>: <property value>
-	    metadata:
-	      <resource specific metadata>
-	    depends_on: <resource ID or list of ID>
-	    update_policy: <update policy>
-	    deletion_policy: <deletion policy>
-	    external_id: <external resource ID>
-	    condition: <condition name or expression or boolean>
+<ul>
+<li>Xác định nguồn lực thực tế làm nên 1 stack được deploy từ template hay chính là sản phẩm của template đó.</li>
+<li>Mỗi `resourc`e được định nghĩa trong 1 khối riêng biệt ở trong `resource section` .</li>
+</ul>
+<pre>
+<code>
+resources:
+  <resource ID>:
+    type: <resource type>
+    properties:
+      <property name>: <property value>
+    metadata:
+      <resource specific metadata>
+    depends_on: <resource ID or list of ID>
+    update_policy: <update policy>
+    deletion_policy: <deletion policy>
+    external_id: <external resource ID>
+    condition: <condition name or expression or boolean>
+</code>
+</pre>
 
 `resource ID`: ID của Resource ( tên của Resource ) và giá trị này là duy nhất trong template  
 `type:` Loại Resource, ví dụ như: OS::Nova::Server or OS::Neutron::Port. Giá trị này bắt buộc phải có trong Resource và tùy theo Resouce mà cần chỉ ra loại. VD như Resouce là VM thì cần định nghĩa loại là OS::Nova::Server  
