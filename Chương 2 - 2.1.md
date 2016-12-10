@@ -1,4 +1,4 @@
-#Chương 2 - Phần 1: HOT Template Guide 
+#Chương 2 : HOT Template Guide 
 ***
 #Mục lục
 [2.1.HOT Template Structure](#2.1)  
