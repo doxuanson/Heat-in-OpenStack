@@ -228,7 +228,7 @@ resources:
 
 <a name="2.5"></a>  
 ##2.5.Sử dụng section parameters and section output in Stack  
-<a name="2.5.1."></a>
+<a name="2.5.1"></a>
 ###2.5.1.A most basic template  
 The most basic template you can think of may contain only a single resource definition using only predefined properties (along with the mandatory Heat template version tag). For example, the template below could be used to simply deploy a single compute instance.  
 ```sh
