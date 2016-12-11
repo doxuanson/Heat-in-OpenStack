@@ -76,10 +76,10 @@ parameter_groups:
   - <param name>
 ```
 
-`label`: nhãn mà người dùng có thể đọc được liên hệ đến nhóm của các param
-`description`: mô tả
-`parameters`: một list của các param trong nhóm này
-`param name`: tên của các param trong parameters section
+`label`: nhãn mà người dùng có thể đọc được liên hệ đến nhóm của các param  
+`description`: mô tả  
+`parameters`: một list của các param trong nhóm này  
+`param name`: tên của các param trong parameters section  
 
 ####4.parameters section
 - Sử dụng để định nghĩa các tham số thay đổi với mỗi khi triển khai template ví dụ như username hoặc password, image,... Mỗi param được đặt trong một khối với tên của param bắt đầu và theo sau là một loạt các thuộc tính của param .  
