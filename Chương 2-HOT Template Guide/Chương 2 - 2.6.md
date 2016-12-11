@@ -4,12 +4,12 @@
 [2.6.Template](#2.6)  
 - [2.6.1.Create a network and a subnet](#2.6.1)  
 - [2.6.2.Create a port](#2.6.2)
-- [2.6.3.Create a router and add subnet to router](2.6.3)  
-- [2.6.4.Create a Floating IP](2.6.4)  
-- [2.6.5. Associate a floating IP to an instance](2.6.5)  
-- [2.6.6.Create a private-network hoàn chỉnh](2.6.6)  
-- [2.6.7.Create a instance](2.6.7)  
-- [2.6.8.Create a instance with network and floating_ip](2.6.8)  
+- [2.6.3.Create a router and add subnet to router](#2.6.3)  
+- [2.6.4.Create a Floating IP](#2.6.4)  
+- [2.6.5. Associate a floating IP to an instance](#2.6.5)  
+- [2.6.6.Create a private-network hoàn chỉnh](#2.6.6)  
+- [2.6.7.Create a instance](#2.6.7)  
+- [2.6.8.Create a instance with network and floating_ip](#2.6.8)  
 
 
 
@@ -82,7 +82,7 @@ outputs:
     value: {get_attr: [new_port , show]}
 ```  
 
-<a name="2.6.3"></a>
+<a name="2.6.3"></a>  
 ###2.6.3.Create a router and add subnet to router  
 ####1.Create a router  
 
