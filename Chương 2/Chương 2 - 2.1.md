@@ -108,8 +108,8 @@ This attribute is optional and defaults to false.
 `constraints`: Đây là điều kiện ràng buộc của param. Khi khai báo param thì nó sẽ check xem thông số của param có trong hệ thống không. Đây là trường tùy chọn.   
 `immutable`  
 Defines whether the parameter is updatable. Stack update fails, if this is set to true and the parameter value is changed. This attribute is optional and defaults to false.  
-- The table below describes all currently supported types with examples:
-***
+- The table below describes all currently supported types with examples:  
+
 |Type|Description|Examples|  
 |:---|:---------:|-------:|   
 |string|A literal string|"String param"|  
@@ -130,9 +130,9 @@ parameters:
     label: Port Number
     description: Port number to be configured for the web server
 ```
-```sh
+**Note :**  
 The description and the label are optional, but defining these attributes is good practice to provide useful information about the role of the parameter to the user.
-```
+
 
 ####5.resource section
 - Xác định nguồn lực thực tế làm nên 1 stack được deploy từ template hay chính là sản phẩm của template đó.
