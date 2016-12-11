@@ -4,6 +4,7 @@
 [2.1.HOT Template Structure](#2.1)  
 [2.1.1.Giới thiệu](#2.1.1)  
 [2.1.2.Template structure](#2.1.2)  
+***  
 
 
 <a name="2.1"></a>
@@ -179,11 +180,12 @@ resources:
 - Định nghĩa ra các params trả về cho người dùng sau khi stack được tạo ra , ví dụ như địa chỉ IP của instance, địa chỉ URL của ứng dụng web được deploy trong stack
 - Each output parameter is defined as a separate block within the outputs section according to the following syntax :  
 ```sh
-	outputs:
-	  <parameter name>:
-	    description: <description>
-	    value: <parameter value>
-	    condition: <condition name or expression or boolean>
+outputs:
+  <parameter name>:
+    description: <description>
+    value: <parameter value>
+    condition: <condition name or expression or boolean>
+
 ``` 
 `parameter name`: The output parameter name, which must be unique within the outputs section of a template.  
 `description`: A short description of the output parameter. This attribute is optional.  
